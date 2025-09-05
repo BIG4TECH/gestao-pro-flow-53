@@ -66,7 +66,7 @@ export function Header({ onSidebarToggle }: HeaderProps) {
             <span className="text-primary-foreground font-bold text-sm">MP</span>
           </div>
           <h1 className="text-xl font-bold text-foreground hidden sm:block">
-            MiPag - Sistema de Contabilidade
+            Sistema de Contabilidade
           </h1>
         </div>
       </div>

@@ -10,9 +10,9 @@ import { useToast } from '@/hooks/use-toast';
 
 const helpSections = [
   {
-    id: 'mipag-module',
-    title: 'Módulo MiPag - Cobranças e Pagamentos',
-    content: `O módulo MiPag oferece gestão completa de cobranças e pagamentos com:
+    id: 'cobrancas-module',
+    title: 'Módulo de Cobranças e Pagamentos',
+    content: `O módulo de cobranças oferece gestão completa de cobranças e pagamentos com:
     
     • Cadastro de clientes e planos de cobrança
     • Envio automático de cobranças via WhatsApp e Email
@@ -193,11 +193,11 @@ export default function Ajuda() {
               </div>
 
               <div className="pt-4 border-t">
-                <h4 className="font-medium text-foreground mb-2">Sobre o MiPag</h4>
+                <h4 className="font-medium text-foreground mb-2">Sobre o Sistema</h4>
                 <p className="text-sm text-muted-foreground">
-                  O MiPag é um sistema WEB de contabilidade integrado, desenvolvido para 
+                  Este é um sistema WEB de contabilidade integrado, desenvolvido para 
                   oferecer uma solução completa e moderna para escritórios contábeis e empresas. 
-                  Com módulos especializados e integração nativa, simplifica a gestão contábil, 
+                  Com módulos especializados e integração nativa, simplifica a gestão contábil,
                   fiscal e administrativa.
                 </p>
               </div>
@@ -285,7 +285,7 @@ export default function Ajuda() {
                 <Mail className="w-5 h-5 text-primary" />
                 <div>
                   <p className="font-medium">Email de Suporte</p>
-                  <p className="text-sm text-muted-foreground">suporte@mipag.com.br</p>
+                  <p className="text-sm text-muted-foreground">suporte@sistema.com.br</p>
                 </div>
               </div>
 
@@ -318,7 +318,7 @@ export default function Ajuda() {
       {/* Footer */}
       <div className="text-center py-4 border-t">
         <p className="text-sm text-muted-foreground">
-          MiPag © 2025 - Sistema WEB de Contabilidade Integrado
+          Sistema WEB de Contabilidade © 2025
         </p>
       </div>
     </div>

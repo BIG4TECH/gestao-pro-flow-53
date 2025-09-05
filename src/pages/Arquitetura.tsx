@@ -16,9 +16,9 @@ interface ModuleInfo {
 
 const systemModules: ModuleInfo[] = [
   {
-    id: 'mipag-cobrancas',
-    title: 'MiPag - Cobranças e Pagamentos',
-    description: 'Cadastro de clientes e planos. Envio automático de cobranças via WhatsApp/Email. Integração com Mercado Pago para PIX, cartões e recorrências. Gestão completa do ciclo de faturamento e cobrança.',
+    id: 'cobrancas-pagamentos',
+    title: 'Cobranças e Pagamentos',
+    description: 'Cadastro de clientes e planos. Envio automático de cobranças via WhatsApp/Email. Integração MiPag com Mercado Pago para PIX, cartões e recorrências. Gestão completa do ciclo de faturamento e cobrança.',
     route: '/cobrancas',
     category: 'left'
   },
@@ -248,7 +248,7 @@ export default function Arquitetura() {
       {/* Footer */}
       <div className="text-center py-4 border-t">
         <p className="text-sm text-muted-foreground">
-          MiPag © 2025 - Sistema WEB de Contabilidade Integrado
+          Sistema WEB de Contabilidade © 2025
         </p>
       </div>
     </div>

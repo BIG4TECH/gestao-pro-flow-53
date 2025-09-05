@@ -116,7 +116,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
               <span className="w-4 h-4 text-sidebar-primary-foreground font-bold text-xs">MP</span>
             </div>
             <span className="font-semibold text-sidebar-foreground">
-              MiPag
+              Sistema
             </span>
           </div>
         )}

@@ -11,7 +11,7 @@ export default function SearchResults() {
 
   // Architecture modules for search
   const architectureModules = [
-    { id: 'mipag', title: 'MiPag - Cobranças e Pagamentos', route: '/cobrancas' },
+    { id: 'cobrancas', title: 'Cobranças e Pagamentos', route: '/cobrancas' },
     { id: 'folha', title: 'Folha de Pagamento', route: '/folha-pagamento' },
     { id: 'contabilidade', title: 'Contabilidade Digital', route: '/contabilidade-digital' },
     { id: 'simples', title: 'Simples Nacional', route: '/simples-nacional' },
@@ -134,7 +134,7 @@ export default function SearchResults() {
       {/* Footer */}
       <div className="text-center py-4 border-t">
         <p className="text-sm text-muted-foreground">
-          MiPag © 2025 - Sistema WEB de Contabilidade Integrado
+          Sistema WEB de Contabilidade © 2025
         </p>
       </div>
     </div>

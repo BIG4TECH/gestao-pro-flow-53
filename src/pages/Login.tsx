@@ -31,8 +31,8 @@ export default function Login() {
       
       if (success) {
         toast({
-          title: "Bem-vindo ao MiPag!",
-          description: "Login realizado com sucesso. Novo módulo atualizado!",
+          title: "Bem-vindo!",
+          description: "Login realizado com sucesso.",
         });
       } else {
         toast({
@@ -67,7 +67,7 @@ export default function Login() {
           </div>
           <div>
             <h1 className="text-3xl font-bold text-foreground">
-              MiPag - Sistema de Contabilidade
+              Sistema de Contabilidade
             </h1>
             <p className="text-muted-foreground mt-2">
               Sistema WEB de Contabilidade Integrado
@@ -169,7 +169,7 @@ export default function Login() {
 
         {/* Footer */}
         <div className="text-center text-sm text-muted-foreground">
-          <p>MiPag © 2025 - Sistema WEB de Contabilidade Integrado</p>
+          <p>Sistema WEB de Contabilidade © 2025</p>
           <p className="mt-1">Todos os dados são simulados para demonstração</p>
         </div>
       </div>
