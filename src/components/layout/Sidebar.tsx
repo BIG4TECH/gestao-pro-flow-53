@@ -33,7 +33,7 @@ const navigationItems = [
     allowedRoles: ['office', 'client']
   },
   { 
-    name: 'MiPag - Cobranças e Pagamentos', 
+    name: 'Cobranças e Pagamentos', 
     href: '/cobrancas', 
     icon: DollarSign,
     allowedRoles: ['office']

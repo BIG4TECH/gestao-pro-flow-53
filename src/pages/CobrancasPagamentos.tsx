@@ -209,7 +209,7 @@ export default function CobrancasPagamentos() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-foreground">MiPag - Cobranças e Pagamentos</h1>
+          <h1 className="text-3xl font-bold text-foreground">Cobranças e Pagamentos</h1>
           <p className="text-muted-foreground mt-1">
             Gerencie clientes, faturas e pagamentos com integração Mercado Pago
           </p>
@@ -455,7 +455,7 @@ export default function CobrancasPagamentos() {
       {/* Footer */}
       <div className="text-center py-4 border-t">
         <p className="text-sm text-muted-foreground">
-          MiPag © 2025 - Sistema WEB de Contabilidade Integrado
+          Sistema WEB de Contabilidade © 2025
         </p>
       </div>
     </div>
