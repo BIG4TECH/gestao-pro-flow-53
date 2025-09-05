@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Accounting System Design System */
+
+@layer base {
+  :root {
+    /* Professional Blue Color Palette */
+    --background: 0 0% 100%;
+    --foreground: 218 18% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 218 18% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 18% 15%;
+
+    /* Primary: Professional Blue */
+    --primary: 218 95% 54%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 218 85% 48%;
+
+    /* Secondary: Light Blue */
+    --secondary: 210 100% 97%;
+    --secondary-foreground: 218 18% 15%;
+
+    /* Muted: Subtle grays */
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent: Complementary blue */
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI Elements */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 218 95% 54%;
+    --radius: 0.75rem;
+
+    /* Sidebar specific */
+    --sidebar-background: 218 95% 54%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 218 95% 54%;
+    --sidebar-accent: 218 85% 48%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 218 85% 48%;
+    --sidebar-ring: 0 0% 100%;
+
+    /* Chart colors */
+    --chart-1: 218 95% 54%;
+    --chart-2: 199 89% 48%;
+    --chart-3: 142 76% 36%;
+    --chart-4: 38 92% 50%;
+    --chart-5: 268 83% 58%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(218 95% 54%), hsl(199 89% 48%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 13% 96%));
+    --shadow-soft: 0 4px 12px -2px hsl(218 95% 54% / 0.1);
+    --shadow-medium: 0 8px 25px -5px hsl(218 95% 54% / 0.2);
+  }
+
+  .dark {
+    --background: 218 18% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 218 18% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 218 18% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 218 95% 54%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 218 85% 48%;
+
+    --secondary: 218 18% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 218 18% 15%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 218 18% 20%;
+    --input: 218 18% 20%;
+    --ring: 218 95% 54%;
+
+    --sidebar-background: 218 18% 10%;
+    --sidebar-foreground: 0 0% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* Custom component styles */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Table styles */
+  .table-hover tbody tr:hover {
+    @apply bg-muted/50;
+  }
+
+  /* Animation utilities */
+  .animate-in {
+    animation: animate-in 0.3s ease-out;
+  }
+
+  @keyframes animate-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-bounce-in {
+    animation: bounce-in 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+    70% {
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
